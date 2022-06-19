@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*----HEADER----*/
+
+header {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2.4rem 2.4rem 2rem;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.6rem;
+
+}
+
+.cart-avtar-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.2rem;
+}
+
+.btnCart{
+    cursor: pointer;
+}
+
+.avtar{
+    width:2.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.avtar:hover{
+    border: 2px solid orange;
+    border-radius: 50%;
+
+}
+
+.line-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+}
+.line{
+    background-color: hsl(219, 9%, 45%);
+    width: 1.5rem;
+    height: 0.3rem;
+}
+
+/* --- MENU ---*/
+
+.menu{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+}
+
+.slide-menu{
+    background-color: white;
+    height: 100vh;
+    width: 60vw;
+    padding: 2.3rem;
+}
+
+.slide-menu img{
+ transition: transform 0.2s ease;
+}
+.slide-menu img:hover{
+ cursor: pointer;
+ transform: rotate(90deg);
+}
+
+ul{
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    list-style: none;
+}
+
+a,:active,:visited{
+    color: hsl(220, 13%, 13%);
+    text-decoration: none;
+}
+a:hover{
+    color: black ;
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
+.hidden{
+    /* display: none; */
+}
